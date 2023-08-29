@@ -1,13 +1,13 @@
-
+import "./styles.css";
 export default function Nav() {
     return (
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Reservations</a></li>
-                <li><a href="/">Order Online</a></li>
-                <li><a href="/">Login</a></li>
+            <ul className="nav-links">
+                <li className="nav-items"><a href="/">Home</a></li>
+                <li className="nav-items"><a href="/">About</a></li>
+                <li className="nav-items"><a href="/">Reservations</a></li>
+                <li className="nav-items"><a href="/">Order Online</a></li>
+                <li className="nav-items"><a href="/">Login</a></li>
             </ul>
         </nav>
     )
