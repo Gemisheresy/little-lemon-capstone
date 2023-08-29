@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none
+}
+
+.nav-items {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-sections {
+    flex: auto;
+}
+
+.social-links {
+    list-style-type: none;
+}
+
+
+.main-container {
+    display: grid;
+    gap: .5rem
+}
