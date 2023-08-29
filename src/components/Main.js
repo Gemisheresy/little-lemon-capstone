@@ -1,13 +1,12 @@
-import "./styles.css"
+import { Route, Routes } from "react-router-dom"
+
+import Home from "./Home"
+import Reservations from "./Reservations"
+
 export default function Main() {
     return (
-        <main className="main-container">
-            <section className="hero-section">
-
-            </section>
-            <section className="high-light-section"></section>
-            <section className="testimonial-section"></section>
-            <section className="about-section"></section>
-        </main>
+        <Routes >
+            <Route path="/" element={<Home />} />
+        </Routes>
     )
 }

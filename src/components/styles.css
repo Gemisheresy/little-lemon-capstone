@@ -33,3 +33,36 @@
     display: grid;
     gap: .5rem
 }
+
+
+.flex-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+
+}
+
+.specials-grid {
+    display: grid;
+    align-items: center;
+}
+
+@media (max-width:480px) {
+    .specials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .specials-grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+.gird-col-span-two {
+    grid-column: span 2;
+}
