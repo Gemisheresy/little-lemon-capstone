@@ -31,15 +31,15 @@ const TESTIMONIALS = [
 export default function Testimonials() {
     const testimonialsList = TESTIMONIALS.map((item) => {
         return (
-            <section className="flex-item" key={item._id}>
+            <section className="testimonial-card" key={item._id}>
                 <TestimonialCard data={item} />
             </section>
         )
     })
     return (
         <section className="testimonial-section">
-            <h2>Testimonials</h2>
-            <div className="flex-list">
+            <h2 className="testimonial-heading">Testimonials</h2>
+            <div className="testimonial-grid">
                 {testimonialsList}
             </div>
         </section>

@@ -1,27 +1,106 @@
 .header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 90px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-logo {
+    padding-top: 8px;
+    width: 280px;
+}
+
+.nav-links {
+
+    grid-column: 3 / 12;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.jumbotron-section {
+    background-color: #495E57;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    list-style-type: none
+.jumbotron-information {
+    grid-column: 2/ 6;
 }
 
-.nav-items {
-    padding-left: 2rem;
-    padding-right: 2rem;
+.jumbotron-img {
+    grid-column: 8/10;
+
+}
+
+.specials-header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.specials-header-title {
+    grid-column: 2/ 4;
+}
+
+.specials-header-button {
+    grid-column: 10/ 12
+}
+
+.specials-grid {
+    gap: .5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.specials-card {
+    grid-column: span 4;
+    background-color: #EDEFEE;
+}
+
+.specials-card img {
+    height: 140px;
+    width: 280px;
+}
+
+.testimonial-heading {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-grid {
+    gap: .5rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card {
+    grid-column: span 3;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
 }
 
 .footer-sections {
-    flex: auto;
+    align-items: center;
 }
 
 .social-links {
@@ -32,23 +111,6 @@
 .main-container {
     display: grid;
     gap: .5rem
-}
-
-
-.flex-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-item {
-    flex: 1;
-
-}
-
-.specials-grid {
-    display: grid;
-    align-items: center;
 }
 
 @media (max-width:480px) {

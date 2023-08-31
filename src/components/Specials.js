@@ -34,31 +34,21 @@ const SPECIALS = [
         img: lemonDessert,
         alt: 'lemon-dessert'
 
-    },
-    {
-        _id: uuidv4(),
-        title: "Lemon Dessert With Vanilla Ice Cream",
-        price: "7.99",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Vestibulum sollicitudin lectus sed sapien venenatis faucibus sed ut sapien. Ut efficitur tempus est,
-          vitae egestas sem porttitor sit amet. Ut ac ante at lacus dictum euismod laoreet nec urna.`,
-        img: lemonDessert,
-        alt: 'lemon-dessert-ice-cream'
     }
 ]
 export default function Specials() {
     const specialList = SPECIALS.map((item) => {
         return (
-            <section key={item._id} className="gird-col-span-two" >
+            <section key={item._id} className="specials-card" >
                 <SpecialCard data={item} />
             </section>
         )
     })
     return (
         <section className="specials-section">
-            <div>
-                <h2>Specials</h2>
-                <button>Order Online</button>
+            <div className="specials-header">
+                <h2 className="specials-header-title">Specials</h2>
+                <button className="specials-header-button">Order Online</button>
             </div>
             <div className="specials-grid">
                 {specialList}

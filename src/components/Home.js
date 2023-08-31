@@ -4,7 +4,7 @@ import Jumbotron from "./Jumbotron"
 import "./styles.css"
 export default function Home() {
     return (
-        <main className="main-container">
+        <main className="">
             <Jumbotron />
             <Specials />
             <Testimonials />
