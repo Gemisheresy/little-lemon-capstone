@@ -7,25 +7,29 @@ const TESTIMONIALS = [
         _id: uuidv4(),
         author: "Heresy",
         img: image,
-        rating: 4.5
+        rating: 4.5,
+        review: "Yummy"
     },
     {
         _id: uuidv4(),
         author: "Gemis",
         img: image,
-        rating: 4.2
+        rating: 4.2,
+        review: "Yummy"
     },
     {
         _id: uuidv4(),
         author: "Eli",
         img: image,
-        rating: 4.7
+        rating: 4.7,
+        review: "Yummy"
     },
     {
         _id: uuidv4(),
         author: "Harley",
         img: image,
-        rating: 4.7
+        rating: 4.7,
+        review: "Yummy"
     }
 ]
 export default function Testimonials() {

@@ -17,6 +17,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: "Markazi Text";
+    font-size: 24px;
 
 }
 
@@ -26,6 +28,32 @@
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.jumbotron-title {
+    font-family: "Markazi Text";
+    font-size: 40pt;
+    margin: 0;
+    padding: 0;
+    color: #EDEFEE;
+    font-weight: bolder;
+}
+
+.jumbotron-subtitle {
+    font-family: "Markazi Text";
+    font-size: 36pt;
+    margin: 0;
+    padding: 0;
+    color: #EDEFEE;
+    font-weight: bold;
+}
+
+.jumbotron-description {
+    font-family: "Karla";
+    font-size: 18pt;
+    color: #EDEFEE;
+
 }
 
 .jumbotron-information {
@@ -37,14 +65,22 @@
 
 }
 
+.specials-section {
+    height: 640px;
+    margin-bottom: 40px;
+}
+
 .specials-header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .specials-header-title {
+    font-family: "Karla";
+    font-size: 18pt;
     grid-column: 2/ 4;
 }
 
@@ -67,29 +103,85 @@
 }
 
 .specials-card img {
-    height: 140px;
-    width: 280px;
+    width: 100%;
+    height: 190px;
+    object-fit: cover
+}
+
+.specials-card-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80px;
+}
+
+.specials-card-price {
+    grid-column-start: 3;
+    color: red;
+    font-family: "Karla";
+    font-size: 18pt;
+}
+
+.specials-card-title {
+    grid-column: span 2;
+    font-family: "Karla";
+    font-size: 18pt;
+}
+
+.specials-card-description {
+    margin-left: 5px;
+    font-family: "Karla";
+    font-size: 16pt;
+}
+
+.testimonial-section {
+    height: 380px;
 }
 
 .testimonial-heading {
     width: 15%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
+    font-family: "Markazi Text";
+    font-size: 36pt;
 }
 
 .testimonial-grid {
     gap: .5rem;
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
 }
 
 .testimonial-card {
-    grid-column: span 3;
+    background-color: #EDEFEE;
+    width: 180px;
+    font-family: "Karla";
+}
+
+.testimonial-card-wrapper {
+    margin-left: 5px;
+}
+
+.testimonial-card-badge {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonial-card-img {
+    margin-top: 6px;
+    height: 40px;
+    width: 40px;
+}
+
+.testimonial-rating {}
+
+.testimonial-star {
+    color: yellow
 }
 
 .footer {
@@ -101,30 +193,19 @@
 
 .footer-sections {
     align-items: center;
+    justify-content: center;
 }
 
-.social-links {
+.footer-sec-heading {
+    font-family: "Markazi Text";
+    font-size: 18pt;
+}
+
+.footer-sec-content {
+    font-family: "Karla";
+    font-size: 16pt;
+}
+
+.list-style-none {
     list-style-type: none;
-}
-
-
-.main-container {
-    display: grid;
-    gap: .5rem
-}
-
-@media (max-width:480px) {
-    .specials-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (min-width: 769px) {
-    .specials-grid {
-        grid-template-columns: repeat(12, 1fr);
-    }
-}
-
-.gird-col-span-two {
-    grid-column: span 2;
 }

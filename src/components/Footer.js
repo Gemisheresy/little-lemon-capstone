@@ -7,9 +7,9 @@ export default function Footer() {
                 <img src={logo} alt="Little Lemon Logo" />
             </section>
             <section className="footer-section">
-                <h3>Doormat Navigation</h3>
+                <h3 className='footer-sec-heading'>Doormat Navigation</h3>
                 <nav>
-                    <ul>
+                    <ul className="list-style-none footer-sec-content">
                         <li><a href="/">Home</a></li>
                         <li><a href="/">About</a></li>
                         <li><a href="/">Menu</a></li>
@@ -20,14 +20,16 @@ export default function Footer() {
                 </nav>
             </section>
             <section className="footer-section">
-                <h3>Contact</h3>
-                <p>123 This Street</p>
-                <p>555-555-5555</p>
-                <p>marcro@littlelemon.com</p>
+                <h3 className='footer-sec-heading'>Contact</h3>
+                <div claasName="footer-sec-content">
+                    <p>123 This Street</p>
+                    <p>555-555-5555</p>
+                    <p>marcro@littlelemon.com</p>
+                </div>
             </section>
             <section className="footer-section">
-                <h3>Socials</h3>
-                <ul className="social-links">
+                <h3 className='footer-sec-heading'>Socials</h3>
+                <ul className="list-style-none footer-sec-content">
                     <li>twitter</li>
                     <li>insta</li>
                     <li>facebook</li>

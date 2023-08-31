@@ -16,7 +16,7 @@ const SPECIALS = [
     },
     {
         _id: uuidv4(),
-        title: "Greek Salad With Chicken",
+        title: "Greek Salad w/ Chicken",
         price: "17.99",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Vestibulum sollicitudin lectus sed sapien venenatis faucibus sed ut sapien. Ut efficitur tempus est,
