@@ -7,6 +7,31 @@ body {
     color: #333333;
 }
 
+.list-style-none {
+    list-style-type: none;
+}
+
+
+.button {
+    margin-bottom: 2%;
+    background-color: #F4CE14;
+    border-radius: 16px;
+    border: none;
+    font-family: "Karla";
+    font-size: 14pt;
+    color: #333333;
+}
+
+.button:active {
+    background-color: #333333;
+    color: white
+}
+
+.button span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -188,38 +213,6 @@ body {
     color: yellow
 }
 
-.footer {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: top;
-    margin-bottom: 5%;
-    color: #333333;
-}
-
-.footer-img {
-    padding-top: 5%;
-}
-
-.footer-sections {
-    align-items: center;
-    justify-content: center;
-}
-
-.footer-sec-heading {
-    font-family: "Markazi Text";
-    font-size: 18pt;
-}
-
-.footer-sec-content {
-    font-family: "Karla";
-    font-size: 16pt;
-}
-
-.list-style-none {
-    list-style-type: none;
-}
-
 .about-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -283,25 +276,40 @@ body {
     z-index: 1;
 }
 
-.button {
-    margin-bottom: 2%;
-    background-color: #F4CE14;
-    border-radius: 16px;
-    border: none;
-    font-family: "Karla";
-    font-size: 14pt;
+.footer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: top;
+    margin-bottom: 5%;
     color: #333333;
 }
 
-.button:active {
-    background-color: #333333;
-    color: white
+.footer-img {
+    padding-top: 5%;
 }
 
-.button span {
-    padding-left: 15px;
-    padding-right: 15px;
+.footer-sections {
+    align-items: center;
+    justify-content: center;
 }
+
+.footer-sec-heading {
+    font-family: "Markazi Text";
+    font-size: 18pt;
+}
+
+.footer-sec-content {
+    font-family: "Karla";
+    font-size: 16pt;
+}
+
+.reservation-form {
+    display: grid;
+    max-width: 200px;
+    gap: 20px
+}
+
 
 @media only screen and (max-width: 390px) {
     .header {

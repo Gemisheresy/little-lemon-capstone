@@ -21,7 +21,7 @@ export default function Footer() {
             </section>
             <section className="footer-section">
                 <h3 className='footer-sec-heading'>Contact</h3>
-                <div claasName="footer-sec-content">
+                <div className="footer-sec-content">
                     <p>123 This Street</p>
                     <p>555-555-5555</p>
                     <p>marcro@littlelemon.com</p>
