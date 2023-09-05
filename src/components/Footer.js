@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <section className="footer-section">
-                <img src={logo} alt="Little Lemon Logo" />
+                <img className="footer-img" src={logo} alt="Little Lemon Logo" />
             </section>
             <section className="footer-section">
                 <h3 className='footer-sec-heading'>Doormat Navigation</h3>

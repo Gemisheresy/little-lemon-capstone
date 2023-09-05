@@ -10,7 +10,7 @@ export default function SpecialCard({ data }) {
                 <h3 className="specials-card-price">&#x24; {data.price}</h3>
             </div>
             <p className="specials-card-description">{data.description}</p>
-            <button>Order Now</button>
+            <button className="button"><span>Order Now</span></button>
         </ >
     )
 }

@@ -1,7 +1,15 @@
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+body {
+    color: #333333;
+}
+
 .header {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    height: 90px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -34,19 +42,17 @@
 .jumbotron-title {
     font-family: "Markazi Text";
     font-size: 40pt;
-    margin: 0;
-    padding: 0;
     color: #EDEFEE;
     font-weight: bolder;
+    line-height: 10px;
 }
 
 .jumbotron-subtitle {
     font-family: "Markazi Text";
     font-size: 36pt;
-    margin: 0;
-    padding: 0;
     color: #EDEFEE;
     font-weight: bold;
+    line-height: 15px;
 }
 
 .jumbotron-description {
@@ -66,7 +72,6 @@
 }
 
 .specials-section {
-    height: 640px;
     margin-bottom: 40px;
 }
 
@@ -100,12 +105,14 @@
 .specials-card {
     grid-column: span 4;
     background-color: #EDEFEE;
+    border-radius: 8px;
 }
 
 .specials-card img {
     width: 100%;
     height: 190px;
-    object-fit: cover
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
 }
 
 .specials-card-header {
@@ -133,9 +140,6 @@
     font-size: 16pt;
 }
 
-.testimonial-section {
-    height: 380px;
-}
 
 .testimonial-heading {
     width: 15%;
@@ -151,6 +155,7 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -158,6 +163,7 @@
 }
 
 .testimonial-card {
+    border-radius: 8px;
     background-color: #EDEFEE;
     width: 180px;
     font-family: "Karla";
@@ -178,8 +184,6 @@
     width: 40px;
 }
 
-.testimonial-rating {}
-
 .testimonial-star {
     color: yellow
 }
@@ -188,7 +192,13 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    align-items: top;
+    margin-bottom: 5%;
+    color: #333333;
+}
+
+.footer-img {
+    padding-top: 5%;
 }
 
 .footer-sections {
@@ -208,4 +218,149 @@
 
 .list-style-none {
     list-style-type: none;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .2rem;
+    background-color: #F4CE14;
+    margin-bottom: 2%;
+}
+
+.about-text {
+    grid-column: 2;
+    color: #333333;
+    margin-bottom: 10%;
+}
+
+.about-img {
+    height: 190px;
+}
+
+.about-text h2 {
+    font-family: "Markazi Text";
+    font-size: 40pt;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 15px;
+}
+
+.about-text h3 {
+    font-family: "Markazi Text";
+    font-size: 36pt;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 15px;
+}
+
+.about-text p {
+    font-family: "Karla";
+    font-size: 18pt;
+}
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    padding-top: 20%;
+    margin-bottom: 10%;
+}
+
+.about-img-top {
+    grid-column: 1/ span 8;
+    grid-row: 1;
+    padding-top: 40%;
+    z-index: 1;
+}
+
+.about-img-bottom {
+    grid-column: 4 / -1;
+    grid-row: 1;
+}
+
+.about-img-bottom:hover {
+    z-index: 1;
+}
+
+.button {
+    margin-bottom: 2%;
+    background-color: #F4CE14;
+    border-radius: 16px;
+    border: none;
+    font-family: "Karla";
+    font-size: 14pt;
+    color: #333333;
+}
+
+.button:active {
+    background-color: #333333;
+    color: white
+}
+
+.button span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 390px) {
+    .header {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-links {
+        grid-row-start: 2;
+        grid-column: 1;
+        justify-content: center;
+    }
+
+    .jumbotron-section {
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+
+    }
+
+    .jumbotron-img {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .jumbotron-information {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        margin: auto;
+    }
+
+    .specials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-heading {
+        width: 60%;
+    }
+
+    .about-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-text {
+        grid-column: span 2;
+    }
+
+    .about-img {
+        margin-left: 15%;
+    }
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

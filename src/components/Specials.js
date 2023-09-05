@@ -16,7 +16,7 @@ const SPECIALS = [
     },
     {
         _id: uuidv4(),
-        title: "Greek Salad w/ Chicken",
+        title: "Greek Salad With Chicken",
         price: "17.99",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Vestibulum sollicitudin lectus sed sapien venenatis faucibus sed ut sapien. Ut efficitur tempus est,
@@ -48,7 +48,7 @@ export default function Specials() {
         <section className="specials-section">
             <div className="specials-header">
                 <h2 className="specials-header-title">Specials</h2>
-                <button className="specials-header-button">Order Online</button>
+                <button className="specials-header-button button"><span>Order Online</span></button>
             </div>
             <div className="specials-grid">
                 {specialList}
