@@ -48,7 +48,7 @@ export default function Specials() {
         <section className="specials-section">
             <div className="specials-header">
                 <h2 className="specials-header-title">Specials</h2>
-                <button className="specials-header-button button"><span>Order Online</span></button>
+                <button className="specials-header-button button"><span>Order</span></button>
             </div>
             <div className="specials-grid">
                 {specialList}

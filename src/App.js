@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom"
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Reservations from './pages/BookingPage'
+import BookingPage from './pages/BookingPage'
 import Home from "./pages/Home"
+import Confirmation from "./pages/Confirmation";
 import './App.css';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <>
       <Header />
       <Routes >
-        <Route path="/r" element={<Home />} />
-        <Route path="/" element={<Reservations />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/booking-confirmation" element={<Confirmation />} />
       </Routes>
       <Footer />
     </>

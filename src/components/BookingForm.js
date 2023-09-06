@@ -15,25 +15,25 @@ export default function BookingForm({ availableTimes, dispatch, handleSubmit }) 
                     occasion
                 })
             }}>
-                <label htmlFor="res-date">Choose date</label>
+                <label htmlFor="res-date" aria-label='Choose Date'>Choose Date</label>
                 <input type="date" id="res-date" onChange={(e) => {
                     dispatch(e.target.value)
                     setDate(e.target.value)
-                }} value={date} />
-                <label htmlFor="res-time">Choose time</label>
+                }} value={date} required />
+                <label htmlFor="res-time" aria-label='Choose Time'>Choose time</label>
                 <select id="res-time " onChange={(e) => setTime(e.target.value)}>
-                    {availableTimes.map((time) => (<option value={time}>{time}</option>))}
+                    {availableTimes.map((time, i) => (<option key={i} value={time}>{time}</option>))}
                 </select>
-                <label htmlFor="guests">Number of guests</label>
+                <label htmlFor="guests" aria-label='Number of Guests'>Number of Guests</label>
                 <input type="number" placeholder="1" min="1" max="10" id="guests" onChange={(e) => setGuests(e.target.value)} value={guests} />
-                <label htmlFor="occasion">Occasion</label>
+                <label htmlFor="occasion" aria-label='Occasion'>Occasion</label>
                 <select id="occasion" onChange={(e) => setOccasion(e.target.value)} value={occasion}>
                     <option>None</option>
                     <option>Birthday</option>
                     <option>Anniversary</option>
                     <option>Engagement</option>
                 </select>
-                <input type="submit" value="Make Your reservation" />
+                <input type="submit" value="Make Your reservation" aria-label='Submit Reservation' role="submit" />
             </form >
         </>
     )

@@ -12,8 +12,8 @@ export default function AboutUs() {
                     continue to oversee the Little Lemon restaurant, nearly thirty years later.</p>
             </div>
             <div className="about-imgs image-stack">
-                <img className="about-img about-img-top" src={owner1} />
-                <img className="about-img about-img-bottom" src={owner2} />
+                <img className="about-img about-img-top" src={owner1} alt="little-lemon-owners-top-image" />
+                <img className="about-img about-img-bottom" src={owner2} alt="little-lemon-owners-bottom-image" />
             </div>
         </section>
     )

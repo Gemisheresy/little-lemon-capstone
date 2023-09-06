@@ -4,8 +4,8 @@ export default function Nav() {
         <nav className="nav-links">
             <a href="/">Home</a>
             <a href="/#about">About</a>
-            <a href="/reservations">Reservations</a>
-            <a href="/">Order Online</a>
+            <a href="/booking">Reservations</a>
+            <a href="/">Order</a>
             <a href="/">Login</a>
         </nav>
     )
